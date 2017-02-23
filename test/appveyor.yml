@@ -14,6 +14,8 @@ init:
     - set BRANCH_TO_TEST=%APPVEYOR_REPO_BRANCH%
     - set BOOST_REMOVE=any
 
+platform: x64
+
 ###############################################################################################################
 # From this point and below code is same for all the Boost libs
 ###############################################################################################################
@@ -28,7 +30,8 @@ branches:
 skip_tags: true
 
 before_build:
-    - set PATH=%PATH%;C:\\MinGW\\bin
+    - set PATH=%PATH%;C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1;C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1\\bin
+    # C:\\MinGW\\bin
     # Set this to the name of the library
     - set PROJECT_TO_TEST=%APPVEYOR_PROJECT_NAME%
     - echo "Testing %PROJECT_TO_TEST%"
