@@ -30,6 +30,9 @@ branches:
 skip_tags: true
 
 before_build:
+    - dir /p C:\\
+    - dir /p C:\\mingw-w64
+    - dir /p C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1
     - set PATH=%PATH%;C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1;C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1\\bin
     # C:\\MinGW\\bin
     # Set this to the name of the library
