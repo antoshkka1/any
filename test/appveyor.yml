@@ -28,7 +28,6 @@ branches:
 skip_tags: true
 
 before_build:
-    - dir C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1
     - set PATH=%PATH%;C:\\MinGW\\bin
     # C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1;C:\\mingw-w64\\i686-6.3.0-posix-dwarf-rt_v5-rev1\\bin
     # C:\\MinGW\\bin
